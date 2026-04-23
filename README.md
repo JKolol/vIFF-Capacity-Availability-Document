@@ -38,7 +38,9 @@ profile_restrictions.txt
   - Format ``<ICAO_DEP>:<ICAO_DEST>:<WPT>:<FL>`` example: ``LPPT,LPFR:*:IMOBA:200`` or ``*:EDDM:SUNIS/lat,lon/LIMRA:200``
   - ICAO_DEP: dep airport (or list of airports "," seperated), "*" to select all dep airports (Ex. LPPT,LPCS).
   - ICAO_DEST: dest airport (or list of airports "," seperated), "*" to select all dest airports (Ex. LEBL).
-  - WPT: Waypoint to be level at. Additionally, decimal coordinates can be used and including the point to be included in route for the condition to be valid. Format: **WPTNAME/lat,lon/WPTNAME** Example: ``SUNIS/47.6676,14.8851/MORED``.
+  - WPT: Waypoint to be level at.
+     - Decimal coordinates can be used and including the point to be included in route for the condition to be valid. Format: **WPTNAME/lat,lon/WPTNAME** Example: ``SUNIS/47.6676,14.8851/MORED``.
+     - Multiple can be included ``|`` seperated: Example: ``SUNIS/47.6676,14.8851/LIMRA|LIMRA/47.70,14.90/XANEX`` or ``AKINI|TURBU|XOMBA``.
   - FL: numeric value indicating the FL (Ex. 200).
 
   Remark: it will only be respected, if RFL is at or above.
